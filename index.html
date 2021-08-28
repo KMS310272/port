@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="portfolio">
+    <meta name="author" content="Minso Kim">
+    <meta name="description" content="김민소의 웹 포트폴리오입니다">
+    <meta name="keywords" content="포트폴리오, 웹개발자, 프론트앤드, front end, publisher, coding, web, portfolio">
+    <title>Minso Portfolio</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../port/css/reset.css">
+    <link rel="stylesheet" href="../port/css/style.css">
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="fav/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="fav/favicon.ico" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Big+Shoulders+Stencil+Text&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--loding-->
+    <div class="progress" id="progress">
+        <span class="progress-bar"></span>
+        <span class="progress-text">0%</span>
+        <!--//loding--> 
+    </div>
+    <div class="scroll">0</div>
+
+    <div id="wrap">
+        <header>
+            <h1>PORT<em>folio</em></h1>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#section2">ABOUT
+                            <div class="svg">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 476.213 476.213" style="fill:rgb(248, 202, 95);" xml:space="preserve">
+                                    <polygon
+                                        points="476.213,238.105 400,161.893 400,223.106 0,223.106 0,253.106 400,253.106 400,314.32 " />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section3">SITE
+                            <div class="svg">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 476.213 476.213" style="fill:rgb(182, 245, 93);" xml:space="preserve">
+                                    <polygon
+                                        points="476.213,238.105 400,161.893 400,223.106 0,223.106 0,253.106 400,253.106 400,314.32 " />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section6">SCRIPT
+                            <div class="svg">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 476.213 476.213" style="fill:rgb(248, 202, 95);" xml:space="preserve">
+                                    <polygon
+                                        points="476.213,238.105 400,161.893 400,223.106 0,223.106 0,253.106 400,253.106 400,314.32 " />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer_wrap">contact
+                            <div class="svg">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 476.213 476.213" style="fill:rgb(182, 245, 93);" xml:space="preserve">
+                                    <polygon
+                                        points="476.213,238.105 400,161.893 400,223.106 0,223.106 0,253.106 400,253.106 400,314.32 " />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--//header-->
+        <main>
+            <section id="section1">
+                <div class="sec1">
+                    <div class="container">
+                        <h1 class="h1">
+                            <strong>CREATIVE</strong>
+                            <em>MY</em>
+                            <strong>PORTFOLIO</strong>
+                        </h1>
+                    </div>
+                </div>
+                <div id="fps"></div>
+                <div id="bg_glow"></div>
+                <div id="overlay"></div>
+                <canvas id="canvas"></canvas>
+                <!-- <div class="svg_b">
+                    <svg viewBox="0 0 1834 1473" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="Hero__Grid-sc-1kcc6q1-8 jsUmzE hero__grid"
+                        style="opacity: 1; transform: translate(0.7477px, 8.3956px) rotate(10.97deg);">
+                        <defs></defs>
+                        <path opacity="0.3"
+                            d="M1568.38 1471.68H.88M267.684.29L2.528 1471.02m1579.432-90.49H17.314M365.475.29L100.319 1471.02m1498.211-182.41H33.887M463.265.29L198.109 1471.02M1615.1 1196.69H50.459M561.056.29L295.899 1471.02m1335.781-366.26H67.031M658.846.29L393.69 1471.02m1254.56-458.18H83.603M756.636.29L491.48 1471.02m1173.34-550.097H100.176M854.427.29L589.271 1471.02M1681.39 829.003H116.748M952.217.29L687.061 1471.02M1697.97 737.082H133.32M1050.01.29L784.851 1471.02m929.689-825.858H149.892M1147.8.29L882.642 1471.02m848.468-917.779H166.465M1245.59.29L980.432 1471.02M1747.68 461.321H183.037M1343.38.29l-265.16 1470.73M1764.25 369.4H199.609M1441.17.29l-265.16 1470.73m604.82-1193.541H216.181M1538.96.289L1273.8 1471.02m523.6-1285.461H232.754M1636.75.289L1371.59 1471.02M1813.97 93.638H249.326M1734.54.29l-265.16 1470.73M1830.54 1.718H265.898M1833.14.284L1567.78 1472.16"
+                            stroke="#FF3568" stroke-width="1.5"></path>
+                    </svg>
+                </div> -->
+            </section>
+
+            <!--//section1-->
+
+            <section id="section2">
+                <!--move_box1-->
+                <div class="move_w1">
+                    <div>
+                        <span>welcome to minso's page</span>
+                    </div>
+                </div>
+                <!--//move_box1-->
+                <div class="sec2">
+                    <div class="container">
+                        <div class="about">
+                            <div class="left">
+                                <h2>about me</h2>
+                                <h1>I'D LIKE TO<br>
+                                    INTRODUCE<em>MYSELF</em>
+                                </h1>
+                                <p>
+                                    안녕하세요 프론트 앤드를 목표하는 꿈 많은 저를 소개해보려 합니다<br>
+                                    제가 살아온 길을 말하자면 항상 도전과 인내심이라는 단어를 빼놓을수 없습니다<br>
+                                    지금도 그리고 앞으로도 많은 도전과 그 도전에서 오는 수많은 위기를 인내심과 재치로<br>
+                                    또한 이제는 팀원으로써 즐거운 경험과 지혜로 바꿔 나가 보려 합니다<br>
+                                    또한 저의 새로운 목표는 프론트 앤드에서 멈추는게 아니라 풀스텍에 도전 하려하는<br>
+                                    저를 관심있게 봐주세요!
+                                </p>
+                            </div>
+                            <div class="right">
+                                <p>봐주셔서 감사합니다 :)</p>
+                                <!--img-gallery-->
+                                <div class="gallery" id="js-gallery">
+                                    <figure class="gallery__item" id="js-item-01"><img class="gallery__item__img"
+                                            src="../port/img/alex.jpg" alt="사진1"></figure>
+                                    <figure class="gallery__item" id="js-item-02"><img class="gallery__item__img"
+                                            src="../port/img/aus.l.jpg" alt="사진2"></figure>
+                                    <figure class="gallery__item" id="js-item-03"><img class="gallery__item__img"
+                                            src="../port/img/flower.JPG" alt="사진3"></figure>
+                                    <figure class="gallery__item" id="js-item-04"><img class="gallery__item__img"
+                                            src="../port/img/me.JPG" alt="사진4"></figure>
+                                    <figure class="gallery__item" id="js-item-05"><img class="gallery__item__img"
+                                            src="https://images.pexels.com/photos/1445418/pexels-photo-1445418.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                            alt="사진5"></figure>
+                                    <div class="click-tap gallery__item" id="js-item-signal">CLICK ME!!</div>
+                                </div>
+                                <!--//img-gallery-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//container-->
+                <!--move_box2-->
+                <div class="move_w2">
+                    <div>
+                        <span>developer / front-end </span>
+                    </div>
+                </div>
+                <!--//move_box2-->
+            </section>
+            <!--section2-->
+            <section id="section3">
+                <div class="sec3">
+                    <h1>Site work</h1>
+                    <div class="site-wrap">
+                        <div class="left">01</div>
+                        <div class="right line">
+                            <h3>반응형 사이트</h3>
+                            <p>Responsive site</p>
+                            <hr class="hr">
+                            <div class="img1">
+                                <img src="../port/img/yellow_mac.jpg" alt="웹표준 사이트 이미지">
+                            </div>
+                            <p class="explain">
+                                웹 표준을 준수하여 W3C Validation에 통과하였으며,<br>
+                                브라우저별 크로스 브라우징과 Internet explore 버전별 호환이 가능하도록 코딩하였습니다.
+                            </p>
+                            <button class="yellow_b" onclick="location.href ='http://bella19910809.dothome.co.kr/responsive/index.html' ">see website
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="487px"
+                                    height="487px" viewBox="0 0 487 487" style="enable-background:new 0 0 487 487;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+                                            c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+                                            c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+                                            C487,239.927,485.094,236.625,482,234.839z" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--//section3-->
+
+            <section id="section4">
+                <div class="sec4">
+                    <div class="site-wrap">
+                        <div class="left">02</div>
+                        <div class="right line_2">
+                            <h3>메가박스 사이트</h3>
+                            <p>responsive megabox site</p>
+                            <hr class="hr2">
+                            <div class="img2">
+                                <img src="../port/img/pink_mac.png" alt="웹표준 사이트 이미지">
+                            </div>
+                            <p class="explain2">
+                                웹 표준을 준수하여 W3C Validation에 통과하였으며,<br>
+                                메뉴 부분과 이미지 슬라이드 부분을 제이쿼리로 작성했으며,<br>
+                                사용자가 더 간편하게 볼수있도록 리뉴얼 했습니다.
+                            </p>
+                            <button class="yellow_b"  onclick="location.href ='http://bella19910809.dothome.co.kr/megabox/index.html' ">see website
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="487px"
+                                    height="487px" viewBox="0 0 487 487" style="enable-background:new 0 0 487 487;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+                                            c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+                                            c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+                                            C487,239.927,485.094,236.625,482,234.839z" />
+                                    </g>
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!--//section4-->
+
+            <section id="section5">
+                <div class="sec5">
+                    <div class="site-wrap">
+                        <div class="left">03</div>
+                        <div class="right line_3">
+                            <h3>록시땅 사이트 리뉴얼</h3>
+                            <p>Loccitane renewal site</p>
+                            <hr class="hr3">
+                            <div class="img3">
+                                <img src="../port/img/blue_mac.jpg" alt="웹표준 사이트 이미지">
+                            </div>
+                            <p class="explain3">
+                                웹 표준을 준수하여 W3C Validation에 통과하였으며,<br>
+                                정적인 웹페이지를 동적인 웹페이지로 리뉴얼 했습니다.<br>
+                                제이쿼리를 사용하여 자연스럽게 아이템들이 나오도록 효과를 줬습니다.
+                            </p>
+                            <button class="yellow_b" onclick="location.href='http://bella19910809.dothome.co.kr/loc.html#'">see website<svg version="1.1" id="Capa_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" width="487px" height="487px" viewBox="0 0 487 487"
+                                    style="enable-background:new 0 0 487 487;" xml:space="preserve">
+                                    <g>
+                                        <path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+                                            c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+                                            c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+                                            C487,239.927,485.094,236.625,482,234.839z" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--//section5-->
+            <section id="section6">
+                <div class="sec6">
+                    <div class="site-wrap">
+                        <div class="left">04</div>
+                        <div class="right line_4">
+                            <h3>유튜브 검색</h3>
+                            <p>Youtube search site</p>
+                            <hr class="hr4">
+                            <div class="img4">
+                                <img src="../port/img/youtube.png" alt="유튜브 검색 이미지">
+                            </div>
+                            <p class="explain4">
+                                Youtube API를 이용하여 <br>
+                                사용자가 서치창에 원하는 검색어를 넣으면<br>
+                                관련 검색 동영상이 나오도록 작업했습니다.
+                            </p>
+                            <button class="yellow_b" onclick="location.href='http://bella19910809.dothome.co.kr/loc.html#'">see website<svg version="1.1" id="Capa_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" width="487px" height="487px" viewBox="0 0 487 487"
+                                    style="enable-background:new 0 0 487 487;" xml:space="preserve">
+                                    <g>
+                                        <path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+                                            c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+                                            c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+                                            C487,239.927,485.094,236.625,482,234.839z" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--//section6-->
+            <section id="section7">
+                <div class="sec7">
+                    <div class="site-wrap">
+                        <div class="left">05</div>
+                        <div class="right line_5">
+                            <h3>영화 검색 사이트</h3>
+                            <p>Search movie site</p>
+                            <hr class="hr5">
+                            <div class="img5">
+                                <img src="../port/img/movie.png" alt="react movie사이트">
+                            </div>
+                            <p class="explain5">
+                                Movie API를 이용하여 <br>
+                                사용자가 서치창에 원하는 검색어를 넣으면<br>
+                                관련 검색 동영상이 나오도록 작업했습니다.
+                            </p>
+                            <button class="yellow_b" onclick="location.href='http://bella19910809.dothome.co.kr/loc.html#'">see website<svg version="1.1" id="Capa_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" width="487px" height="487px" viewBox="0 0 487 487"
+                                    style="enable-background:new 0 0 487 487;" xml:space="preserve">
+                                    <g>
+                                        <path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+                                            c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+                                            c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+                                            C487,239.927,485.094,236.625,482,234.839z" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--//section7-->
+            <section id="section8">
+                <div class="text-bg">
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    <div>Script Script Script Script Script </div>
+                    <div>jQuery jQuery jQuery jQuery jQuery</div>
+                    <div>Javascript Javascript Javascript Javascript</div>
+                    </div>
+                <div class="sec8">
+                    <div>
+                        <p>JQuery를 이용하여 마우스에 따라<br>
+                            원이 움직이도록 만들었습니다.
+                        </p>
+                        <iframe class="iframe" src="source/follow-mouse-rotation/dist/index.html"
+                            style="border: 1px solid #000;">
+                        </iframe>
+
+                    </div>
+                    <div>
+                        <p>JQuery를 이용하여 마우스에 따라<br>
+                            귀여운 얼굴이 움직이게 하였습니다.</p>
+                        <iframe class="iframe" src="source/face-button/dist/index.html" style="border: 1px solid #000;">
+                        </iframe>
+
+                    </div>
+                    <div>
+                        <p>JQuery를 이용하여 마우스 스크롤에<br>
+                            이미지가 휘게 만들었습니다.</p>
+                        <iframe class="iframe" src="source/skew-scroll/dist/index.html" style="border: 1px solid #000;"
+                            style="width: 100%;">
+                        </iframe>
+
+                    </div>
+                    <div>
+                        <p>JQuery를 이용하여 마우스 스크롤에 따라<br>
+                            슬라이드가 변경되도록 했습니다.</p>
+                        <iframe class="iframe" src="source/slider-2/dist/index.html" style="border: 1px solid #000;">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>react로 마우스를 올렸을때 <br>
+                        메뉴가 튀어 나오보이는 효과를 줬습니다.
+                        </p>
+                        <iframe class="iframe" src="source/react-mousehover" style="border: 1px solid #000;">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>react로 tab을 했을때 아코디언 형식으로<br>
+                            펼쳐질수있게 했습니다.</p>
+                        <iframe class="iframe" src="source/react-tab" style="border: 1px solid #000;">
+                        </iframe>
+                    </div>
+
+                </div>
+                <!--//container-->
+            </section>
+            <!--//section6-->
+            <section id="section9">
+                <h1 class="sec9_title">ANIMATION</h1>
+                <div class="sec9">
+                    <div class="contents">
+                        <ul>
+                            <li>
+                                <div class="contents_l">
+                                    <p>부드럽게 움직이는 웨이브</p>
+                                    <p class="p">keyframe과 translate를 이용한 애니메이션 입니다.</p>
+                                    <p class="p2">두개의 keyframe과 부드러운 곡선을 위해 cubic-bezier, transform의 <br>
+                                        translate3d를 이용하여 무한으로 움직이는 부드러운 웨이브를 만들었습니다
+                                    </p>
+                                    <button class="yellow_b2"><a href="https://codepen.io/minso-kim/pen/QWvvQQG">VIEW CODE</a>
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="487px"
+                                            height="487px" viewBox="0 0 487 487"
+                                            style="enable-background:new 0 0 487 487;" xml:space="preserve">
+                                            <g>
+                                                <path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+                                                    c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+                                                    c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+                                                    C487,239.927,485.094,236.625,482,234.839z" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <embed class="ani" src="wave.html" style="border: none;"></embed>
+                            </li>
+                            <li>
+                                <div class="contents_l">
+                                    <p>하트만들기 애니메이션</p>
+                                    <p class="p">keyframe과 scale를 이용한 애니메이션 입니다.</p>
+                                    <p class="p2">두개의 keyframe과 부드러운 곡선을 위해 cubic-bezier, transform의 <br>
+                                        translate3d를 이용하여 무한으로 움직이는 부드러운 웨이브를 만들었습니다
+                                    </p>
+                                    <button class="yellow_b2"><a href="https://codepen.io/minso-kim/pen/wvddypM">VIEW CODE</a>
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="487px"
+                                            height="487px" viewBox="0 0 487 487"
+                                            style="enable-background:new 0 0 487 487;" xml:space="preserve">
+                                            <g>
+                                                <path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+                                                        c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+                                                        c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+                                                        C487,239.927,485.094,236.625,482,234.839z" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <embed class="ani" src="heart.html" style="border: none;"></embed>
+                            </li>
+                            <li>
+                                <div class="contents_l">
+                                    <p>촛불끼리싸우는 애니메이션</p>
+                                    <p class="p">keyframe과 scale를 이용한 애니메이션 입니다.</p>
+                                    <p class="p2">두개의 keyframe과 부드러운 곡선을 위해 cubic-bezier, transform의 <br>
+                                        translate3d를 이용하여 무한으로 움직이는 부드러운 웨이브를 만들었습니다
+                                    </p>
+                                    <button class="yellow_b2"><a href="https://codepen.io/minso-kim/pen/gOWWvzb">VIEW CODE</a>
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="487px"
+                                            height="487px" viewBox="0 0 487 487"
+                                            style="enable-background:new 0 0 487 487;" xml:space="preserve">
+                                            <g>
+                                                <path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+                                                        c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+                                                        c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+                                                        C487,239.927,485.094,236.625,482,234.839z" />
+                                            </g> 
+                                        </svg>
+                                    </button>
+                                </div>
+                                <embed class="ani" src="source/candle/index.html" style="border: none;"></embed>
+                            </li>
+                            <li>
+                                <div class="contents_l">
+                                    <p>로딩 닷 애니메이션</p>
+                                    <p class="p">keyframe과 width를 이용한 애니메이션 입니다.</p>
+                                    <p class="p2">두개의 keyframe과 부드러운 곡선을 위해 cubic-bezier, transform의 <br>
+                                        translate3d를 이용하여 무한으로 움직이는 부드러운 웨이브를 만들었습니다
+                                    </p>
+                                    <button class="yellow_b2"><a href="https://codepen.io/minso-kim/pen/qBmmxYQ">VIEW CODE</a>
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="487px"
+                                            height="487px" viewBox="0 0 487 487"
+                                            style="enable-background:new 0 0 487 487;" xml:space="preserve">
+                                            <g>
+                                                <path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+                                                         c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+                                                        c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+                                                         C487,239.927,485.094,236.625,482,234.839z" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <embed class="ani" src="source/loading-animation/dist/index.html"
+                                    style="border: none;">
+                                </embed>
+                            </li>
+                            <li>
+                                <div class="contents_l">
+                                    <p>로딩 애니메이션</p>
+                                    <p class="p">keyframe과 width를 이용한 애니메이션 입니다.</p>
+                                    <p class="p2">두개의 keyframe과 부드러운 곡선을 위해 cubic-bezier, transform의 <br>
+                                        translate3d를 이용하여 무한으로 움직이는 부드러운 웨이브를 만들었습니다
+                                    </p>
+                                    <button class="yellow_b2"><a href="https://codepen.io/minso-kim/pen/OJmmQEy">VIEW CODE</a>
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="487px"
+                                            height="487px" viewBox="0 0 487 487"
+                                            style="enable-background:new 0 0 487 487;" xml:space="preserve">
+                                            <g>
+                                                <path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+                                                        c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+                                                        c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+                                                        C487,239.927,485.094,236.625,482,234.839z" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <embed class="ani" src="source/rainbow/index.html" style="border: none;"></embed>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <svg class="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 500 500">
+                        <defs>
+                            <path
+                                d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"
+                                id="textcircle_top">
+                                <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate"
+                                    from="0 250 250" to="360 250 250" repeatCount="indefinite" />
+                            </path>
+                            <path
+                                d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"
+                                id="textcircle_bottom">
+                                <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate"
+                                    from="195 250 250" to="555 250 250" repeatCount="indefinite" />
+                            </path>
+                        </defs>
+                        <text dy="70" textLength="1220">
+                            <!-- textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG -->
+                            <textPath xlink:href="#textcircle_top">Minso's portfolio :) </textPath>
+                            <textPath xlink:href="#textcircle_bottom">Minso's portfolio </textPath>
+                        </text>
+                    </svg>
+                </div>
+    </section>
+    <!--//section7-->
+
+    </main>
+    <!--//main-->
+    <footer>
+        <div id="footer_wrap">
+            <div class="container">
+                <h1>CONTACT</h1>
+                <div class="email">
+                   <div class="photo">
+                        <img src="../port/img/pro.jpeg" alt="내 사진">
+                    </div>
+                    <div class="email-form">
+                        <p>
+                            안녕하세요 프론트 앤드를 목표하는 꿈 많은 저를 소개해보려 합니다. 제가 살아온 길을 말하자면 항상 도전과 인내심이라는 단어를 빼놓을수 없습니다<br>
+                            지금도 그리고 앞으로도 많은 도전과 그 도전에서 오는 수많은 위기를 인내심과 재치로 또한 이제는 팀원으로써 즐거운 경험과 지혜로 바꿔 나가 보려 합니다<br>
+                            저의 새로운 목표는 프론트 앤드에서 멈추는게 아니라 풀스텍에 도전 하려하는 저를 관심있게 봐주세요!
+                        </p>
+                        <ul>
+                            <li>Email <span>bella.minsokim@gmail.com</span></li>
+                            <li>
+                                <form action="https://formspree.io/bella.minsokim@gmail.com" method="POST">
+                                    <fieldset>
+                                        <label for="user_name" class="ir_su">name</label>
+                                        <input id="user_name" type="text" name="name" placeholder="your name" required="">
+                                        <label for="user_mail" class="ir_su">email</label>
+                                        <input id="user_mail" name="email" type="email" placeholder="your email">
+                                        <label for="user_message" class="ir_su">message</label>
+                                        <textarea id="user_message" name="message" placeholder="Message"></textarea>
+                                        <button type="submit">send</button>
+                                    </fieldset>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--//container-->
+        </div>
+        <!--//footer_wrap-->
+    </footer>
+    </div>
+    <!--//wrap-->
+    <!--script-->
+
+    <script src="../port/JS/jquery-1.10.2.min.js"></script>
+    <script src="../port/JS/jquery-ui.min.js"></script>
+    <script src="../port/JS/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script src="../port/JS/script.js"></script>
+    <script src="../port/JS/script2.js"></script>
+
+</body>
+</html>

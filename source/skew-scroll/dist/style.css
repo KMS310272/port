@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Cafe24SsurroundAir';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2{
+  color: #8b8984;
+  position: absolute;
+  left: 27%;
+  top: 440px;
+  z-index: 9999;
+  text-align: center;
+  font-family:'Cafe24SsurroundAir';
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      height: 4211px;
+      background: #1F1F1F;
+    }
+
+
+    .container {
+      width: 33.33%;
+      height: 100vh;
+      float: left;
+      position: relative;
+      display: inline-block;
+      background-color:#1F1F1F;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .image-container {
+      width: 30.6%;
+      position: fixed;
+      height: 200vh;
+      transform: translate(0px, 0px);
+      transition-duration: 0.6s;
+      transition-timing-function: cubic-bezier(0.04, 0.72, 0.09, 0.99) !important;
+    }
+
+    #image-container1 {
+      transform: translate(0px, -1475px);
+    }
+
+    .image {
+      position: relative;
+      width: 100%;
+      height: 33.3%;
+      transition: 1s cubic-bezier(0.04, 0.72, 0.09, 0.99);
+      background-image: url('https://images.unsplash.com/photo-1508598986535-2ba964953187?auto=format&fit=crop&w=668&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+      background-position: center;
+      background-size: cover;
+      margin-top: 20px;
+    }
+
+    .image1 {
+      position: relative;
+      width: 100%;
+      height: 33.3%;
+      transition: 1s cubic-bezier(0.04, 0.72, 0.09, 0.99);
+      background-image: url('https://images.unsplash.com/photo-1505904909252-8ce17de9f287?auto=format&fit=crop&w=2754&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+      background-position: center;
+      background-size: cover;
+      margin-top: 20px;
+    }
+
+    .image2 {
+      position: relative;
+      width: 100%;
+      height: 33.3%;
+      transition: 1s cubic-bezier(0.04, 0.72, 0.09, 0.99);
+      background-image: url('https://images.unsplash.com/photo-1483995639460-612cea464dbc?auto=format&fit=crop&w=668&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+      background-position: center;
+      background-size: cover;
+      margin-top: 20px;
+    }

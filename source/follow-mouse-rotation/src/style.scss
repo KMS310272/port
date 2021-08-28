@@ -1,0 +1,52 @@
+body {
+	position: relative;
+}
+
+.o-loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	
+	background: #dc243b;
+	
+	&__inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.shape {
+	position: absolute;
+	top: 10px;
+
+	width: 25px;
+	height: 70px;
+
+	background: rgba(white, 0.5 );
+	border-radius: 20px;
+
+	transition-ease: ease-in-out;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	
+	&__row {
+		position: relative;
+
+		height: 90px;
+		margin-top: 30px;
+
+		opacity: 0;
+		animation: fadeIn 0.15s ease-in-out 2s both;
+	}
+}
+
+// animations
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

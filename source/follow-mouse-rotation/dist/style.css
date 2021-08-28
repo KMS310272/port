@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Cafe24SsurroundAir';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  width: 90%;
+  height: 100%;
+}
+h2{
+  color: #8b8984;
+  position: absolute;
+  left: 27%;
+  top: 440px;
+  z-index: 9999;
+  text-align: center;
+  font-family:'Cafe24SsurroundAir';
+}
+.o-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #1F1F1F;
+}
+.o-loader__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shape {
+  position: absolute;
+  top: 10px;
+  width: 25px;
+  height: 70px;
+  background: #8b8984;
+  border-radius: 20px;
+  transition-ease: ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.shape__row {
+  position: relative;
+  height: 90px;
+  margin-top: 30px;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.15s ease-in-out 2s both;
+          animation: fadeIn 0.15s ease-in-out 2s both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

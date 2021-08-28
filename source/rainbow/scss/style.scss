@@ -1,0 +1,88 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FCEAFC;
+}
+
+$red: #f25774;
+$orange: #ffb65b;
+$yellow: #fdda74;
+$green: #4cbe5d;
+$blue: #4080ff;
+$purple: #7b64c0;
+
+$flag-width: 320px;
+$flag-height: 180px;
+
+.container {
+  width: $flag-width;
+  height: $flag-height;
+
+  .color {
+    height: $flag-height / 6;
+    
+    div {
+      height: $flag-height / 6;
+      width: 0;
+    }
+
+    .red {
+      background: $red;
+      animation-name: slide;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+    }
+
+    .orange {
+      background: $orange;
+      animation-name: slide;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.1s;
+    }
+
+    .yellow {
+      background: $yellow;
+      animation-name: slide;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.2s;
+    }
+
+    .green {
+      background: $green;
+      animation-name: slide;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.3s;
+    }
+
+    .blue {
+      background: $blue;
+      animation-name: slide;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.4s;
+    }
+
+    .purple {
+      background: $purple;
+      animation-name: slide;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.5s;
+    }
+  }
+}
+
+
+@keyframes slide {
+  10% {width: 0; float: left;}
+  37% {width: 100%; float: left;}
+  63% {width: 100%; float: right;}
+  90% {width: 0; float: right;}
+}
