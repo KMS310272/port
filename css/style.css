@@ -1073,6 +1073,17 @@ header .menu li a {
 .sec9 {
     padding: 5vw 7vw 0;
     margin-bottom: 20%;
+    color: #F7CC5F;
+    font-size: 60px;
+    margin: 30px 0;
+    border: 1px solid #F7CC5F;
+    border-radius: 60px;
+    padding: 5px 30px;
+    font-family: 'Monoton', cursive;
+    display: inline-block;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 6.9vw;
 }
 
 .sec7_title {
