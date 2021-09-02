@@ -1603,7 +1603,9 @@ footer .container h1 {
         width: 17vw;
         height: 4vw;
     }
- 
+    .sec6 h1{
+        font-size: 4vw;
+    }
     .yellow_b svg{
         display: none;
     }
